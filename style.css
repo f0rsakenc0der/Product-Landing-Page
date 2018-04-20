@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-size: 100%;
+    font-family: "Helvetica", "Sans-serif";
+}
+
+header {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    display: flex;
+    background: rgb(179, 240, 255);
+    background-size: 50%;
+    background-repeat: repeat;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: .0 5rem;
+}
+
+nav ul li  {
+    color: rgb(0, 0, 0);
+    display: inline;
+    font-size: 2.5em;
+    padding: .0 15px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 4em;
+    position: relative;
+    right: 15rem;
+}
+
+nav img {
+    width: 8%;
+    display: block;
+    min-height: auto;
+    padding: .0 5rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container  #info {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px 1fr));
+    grid-template-areas: 
+    "heading1 heading1"
+    "heading2 heading2"
+    "heading3 heading3"
+    "intro intro"
+    "vid points";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    column-gap: 200px;
+}
+
+.container #info h1 {
+
+ font-size: 3em;
+ grid-area: heading1;
+}
+
+.container #info h2 {
+    font-size: 2.2em;
+    grid-area: heading2;
+}
+
+.container #info h3 {
+    font-size: 1.8em;
+    grid-area: heading3;
+}
+
+.container #info p {
+    font-size: 1.4em;
+    grid-area: intro;
+    width: 80%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.container #info .vid {
+    grid-area: vid;
+}
+
+.container #info .vid label {
+    font-size: 1.1em;
+}
+
+.container #info .points {
+    grid-area: points;
+}
+
+.container #info .points p {
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.container main h2 {
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.container main .gallery {
+ width: 90%;
+}
+
+.container main .gallery .right-row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    margin-bottom: 100px;
+}
+
+.container main .gallery .left-row {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.container main .gallery img {
+    width: auto;
+    max-height: 600px;
+}
+.container main .gallery p {
+    text-align: justify;
+    flex-wrap: wrap;
+}
